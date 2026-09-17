@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #002700;
+        margin: 100px;
+    }
+
+    .mainContainer{
+        display: grid;
+        grid-template-columns: 450px auto;
+        padding: 20px 50px 50px 50px;
+        background-color: rgb(77, 105, 77, 0.5);
+        column-gap: 70px;
+    }
+    .movieHeader{
+        grid-column: span 2;
+    }
+    .movieHeaderText{
+        grid-column: span 2;
+        color: white;
+        font-size: 50px;
+    }
+    .movieSummary{
+        Color: White;
+        font-family: Open Sans;
+        font-size: 30px;
+    }
+    .movieRatingTime{
+        padding: 0px;
+        color: white;
+        text-align: center;
+    }
+    button{
+        font-size:50px;
+    }
+    img{
+        width: 450px;    
+    }
+    h3{
+        color:white;
+
+    }
+    div,p{
+        Color: White;
+        font-family: Open Sans;
+        font-size: 20px;
+
+    }
+</style>
+<body>
+    
+    <div class="mainContainer">
+        <div class="movieHeader">
+            <p class="movieHeaderText">The Silence of the Lambs</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+        </div>
+
+
+
+        <div>
+            <p class="movieSummary">
+               A young FBI cadet is aided by a manipulative cannibal killer in her pursuit of a madman who skins his victims. 
+            </p>
+            <hr>
+            <h3>
+                Director:
+            </h3>
+            <p>
+                Jonathan Demme
+            </p>
+            <h3>
+                Main Cast:
+            </h3>
+            <ul>
+                <li>Jodie Foster</li>
+                <li>Anthony Hopkins</li>
+                <li>Scott Glenn</li>
+            </ul>
+            <h3>
+                Release Date:
+            </h3>
+            <p>
+                Feburary 14th, 1991
+            </p>
+            <br>    
+            <button>WATCH NOW!</button>
+        </div>
+
+        <div class="movieRatingTime">
+            <p>
+                Rated: R | Runtime: 1h 58m | English
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
