@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+<title>Block Buster Video</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1; 
+  }
+  .nav-left {
+    padding-right: 50px;
+    justify-content: flex-end;
+  }
+  .nav-right {
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 35px;
+  }
+  .nav-links a:hover {
+    background-color:#0e3fa9;
+    color: #FFA903;
+    font-size: 35px;
+  }
+  .nav-logo img {
+    width: 175px; 
+    display: block;
+  }
+
+  .movie-grid{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 50px;
+    justify-content: center;
+    padding:50px;
+    
+  }
+  .glow-box {
+    display: grid;
+    grid-template-rows: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glow-box:hover {
+    padding-top: 10px;
+    background-color: #FFA903;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 5px rgb(255, 252, 88);
+  }
+  .about-us{
+    align-items: center;
+  }
+  footer{
+    display:grid;
+    grid-template-columns:auto auto auto;
+  }
+  div,p,button{
+      color: black;
+      font-family: Open Sans;
+      font-size: 20px;
+      text-align: center;
+  }
+</style>
+
+<body style="background-color: #0e3fa9;">
+  <div style="background-color: #FFA903">
+    <nav class="navbar" style="background-color: #FFA903">
+      <!-- Left Side Links -->
+      <div class="nav-links nav-left">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- Centered Logo -->
+      <a href="#" class="nav-logo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Blockbuster Logo">
+      </a>
+      <!-- Right Side Links -->
+      <div class="nav-links nav-right">
+        <a href="#services">Genres</a>
+        <a href="#contact">A-Z</a>
+      </div>
+    </nav>
+  </div>
+
+
+  <div id="movies" class="movie-grid">
+
+    <div class="glow-box">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="The Silence of the Lambs"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>The Silence of the Lambs</h3>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="The Shawshank Redemption"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>The Shawshank Redemption</h3>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="The Godfather"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>The Godfather</h3><br>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://i.ebayimg.com/images/g/8~QAAOSwyQtVoRQC/s-l1200.jpg"
+        alt="Jaws"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>Jaws</h3><br>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BZmIwZjA1NzUtNTA0OS00OWMyLWE5MzctM2RjOWYxZjQyZDdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="Dirty Dancing"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>Dirty Dancing</h3><br>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://static.wikia.nocookie.net/starwars/images/9/9d/Star_Wars_1997_re-release_poster.jpg"
+        alt="Star Wars: A New Hope"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>Star Wars: A New Hope</h3>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://www.elvisdvdcollector.com/cdn/shop/files/Schindler_sList_1024x1024.jpg?v=1725195818"
+        alt="Schindlers List"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>Schindlers List</h3><br>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box">
+      <div>
+        <img src="https://cdng.europosters.eu/pod_public/1300/266241.jpg"
+        alt="Forrest Gump"
+        style="width:230px; height:345px">
+      </div>
+      <div>
+        <h3>Forrest Gump</h3><br>
+      </div>
+      <div>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+</div>
+
+<!-- About -->
+<hr id="about">
+
+<div class="align-items">
+<!-- ``` -->
+  <h2><b>About Us</b></h2>
+
+  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/yfm9MUYDNUHFz67PtY9T0Q/1000s.jpg"
+  alt="1936 North St, Nacogdoches, TX 75965"
+  style="display:block;margin:auto;width:100%;max-width:400px">
+
+  <p style="padding-left:100px; padding-right:100px; font-size: 25px;">
+    Lorem ipsum and mauris
+    neque quam blog. I want to share my world with you.
+    Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+    porta lectus vitae, ultricies congue gravida diam non fringilla.
+  </p>
+</div>
+
+<hr>
+<!-- Footer -->
+<footer style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px">
+  <div>
+    <h2>LOCATION(S)</h2>
+    <p>
+      1936 North St, Nacogdoches, TX 75965
+    </p>
+  </div>
+
+  <div>
+    <h2>NEW RELEASES</h2>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTYxNjg4MzU5OV5BMl5BanBnXkFtZTcwOTA3NTUwMw@@._V1_.jpg"
+        alt="NEW MOVIE!"
+        style="width:50px"><br>
+
+        <span style="font-size: 30px;">New Release:</span><br>
+        <span style="font-size: 25px;">Clash of the Titans</span><br>
+      </div>
+      <hr>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_.jpg"
+        alt="NEW MOVIE!"
+        style="width:50px"><br>
+
+        <span style="font-size: 30px;">New Release:</span><br>
+        <span style="font-size: 25px;">Tangled</span>
+      </div>
+<!-- ``` -->
+
+  </div>
+
+  <div class="w3-serif">
+
+<!-- ``` -->
+<h2>POPULAR TAGS</h2>
+
+<p style="font-size: 25px;">
+  Horror<br>
+  Kids<br>
+  New<br>
+</p>
+<!-- ``` -->
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
