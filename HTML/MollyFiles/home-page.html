@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1; 
+  }
+  .nav-left {
+    padding-right: 50px;
+    justify-content: flex-end;
+  }
+  .nav-right {
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 35px;
+  }
+  .login-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+  }
+  .login-box {
+    padding: 30px;
+    border-radius: 0px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFA903;
+  }
+  .nav-links a:hover {
+    background-color:#0e3fa9;
+    color: #FFA903;
+    font-size: 35px;
+  }
+  .nav-logo img {
+    width: 175px; 
+    display: block;
+  }
+  .movie-grid{
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    column-gap: 50px;
+    justify-content: center;
+    padding:50px;
+    
+  }
+  .glow-box {
+    display: grid;
+    grid-template-rows: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .glow-box:hover {
+    padding-top: 10px;
+    background-color: #FFA903;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 5px rgb(255, 252, 88);
+  }
+  .about-us{
+    align-items: center;
+  }
+  footer{
+    display:grid;
+    grid-template-columns:auto auto auto;
+  }
+  div,p,button{
+      color: black;
+      font-family: Open Sans;
+      font-size: 20px;
+      text-align: center;
+  }
+</style>
+
+<body style="background-color: #0e3fa9;">
+  <div style="background-color: #FFA903">
+    <nav class="navbar" style="background-color: #FFA903">
+      <!-- Left Side Links -->
+      <div class="nav-links nav-left">
+        <a href="\templateedittwo-9-20.html">Home</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- Centered Logo -->
+      <a href="#" class="nav-logo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Blockbuster Logo">
+      </a>
+      <!-- Right Side Links -->
+      <div class="nav-links nav-right">
+        <a href="#services">Genres</a>
+        <a href="#contact">A-Z</a>
+      </div>
+      <!-- Account Links -->
+      <div class="nav-links nav-right">
+        <a href="/login.html">Sign Up</a>
+        <a href="/login.html">Login</a>
+      </div>
+    </nav>
+  </div>
+
+<div class="login-parent">
+    <div class="login-box">
+        
+        <label for="first">Username:</label>
+        <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
+        <button type="submit"> Submit </button>
+    </div>
+</div>
+
+
+
+<hr>
+<!-- Footer -->
+<footer style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px">
+  <div>
+    <h2>LOCATION(S)</h2>
+    <p>
+      1936 North St, Nacogdoches, TX 75965
+    </p>
+  </div>
+
+  <div>
+    <h2>NEW RELEASES</h2>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTYxNjg4MzU5OV5BMl5BanBnXkFtZTcwOTA3NTUwMw@@._V1_.jpg"
+        alt="NEW MOVIE!"
+        style="width:50px"><br>
+
+        <span style="font-size: 30px;">New Release:</span><br>
+        <span style="font-size: 25px;">Clash of the Titans</span><br>
+      </div>
+      <hr>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_.jpg"
+        alt="NEW MOVIE!"
+        style="width:50px"><br>
+
+        <span style="font-size: 30px;">New Release:</span><br>
+        <span style="font-size: 25px;">Tangled</span>
+      </div>
+<!-- ``` -->
+
+  </div>
+
+  <div class="w3-serif">
+
+<!-- ``` -->
+<h2>POPULAR TAGS</h2>
+
+<p style="font-size: 25px;">
+  Horror<br>
+  Kids<br>
+  New<br>
+</p>
+<!-- ``` -->
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
