@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #0e3fa9;
+    }
+
+    .mainContainer{
+        display: grid;
+        grid-template-columns: 450px auto;
+        padding: 20px 50px 50px 50px;
+        background-color: rgb(255, 171, 3);
+        column-gap: 70px;
+        margin: 100px;
+    }
+    .movieHeader{
+        grid-column: span 2;
+    }
+    .movieHeaderText{
+        grid-column: span 2;
+        color: black;
+        font-size: 50px;
+    }
+    .movieSummary{
+        Color: black;
+        font-family: Open Sans;
+        font-size: 30px;
+    }
+    .movieRatingTime{
+        padding: 0px;
+        color: black;
+        text-align: center;
+    }
+
+      .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .nav-links {
+    display: flex;
+    gap: 20px;
+    flex: 1; 
+  }
+  .nav-left {
+    padding-right: 50px;
+    justify-content: flex-end;
+  }
+  .nav-right {
+    padding-left: 50px;
+    justify-content: flex-start;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 35px;
+  }
+  .nav-links a:hover {
+    background-color:#0e3fa9;
+    color: #FFA903;
+    font-size: 35px;
+  }
+  .nav-logo img {
+    width: 175px; 
+    display: block;
+  }
+
+    button{
+        font-size:50px;
+    }
+    img{
+        width: 450px;    
+    }
+    h3{
+        color:black;
+
+    }
+    div,p{
+        Color: black;
+        font-family: Open Sans;
+        font-size: 20px;
+
+    }
+</style>
+<body>
+
+      <div style="background-color: #FFA903">
+    <nav class="navbar" style="background-color: #FFA903">
+      <!-- Left Side Links -->
+      <div class="nav-links nav-left">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+      </div>
+      <!-- Centered Logo -->
+      <a href="#" class="nav-logo">
+        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Blockbuster Logo">
+      </a>
+      <!-- Right Side Links -->
+      <div class="nav-links nav-right">
+        <a href="#services">Genres</a>
+        <a href="#contact">A-Z</a>
+      </div>
+    </nav>
+  </div>
+
+    
+    <div class="mainContainer">
+        <div class="movieHeader">
+            <p class="movieHeaderText">The Silence of the Lambs</p>
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+        </div>
+
+
+
+        <div>
+            <p class="movieSummary">
+               A young FBI cadet is aided by a manipulative cannibal killer in her pursuit of a madman who skins his victims. 
+            </p>
+            <hr>
+            <h3>
+                Director:
+            </h3>
+            <p>
+                Jonathan Demme
+            </p>
+            <h3>
+                Main Cast:
+            </h3>
+            <ul>
+                <li>Jodie Foster</li>
+                <li>Anthony Hopkins</li>
+                <li>Scott Glenn</li>
+            </ul>
+            <h3>
+                Release Date:
+            </h3>
+            <p>
+                Feburary 14th, 1991
+            </p>
+            <br>    
+            <button>WATCH NOW!</button>
+        </div>
+
+        <div class="movieRatingTime">
+            <p>
+                Rated: R | Runtime: 1h 58m | English
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
