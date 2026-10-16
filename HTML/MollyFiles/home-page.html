@@ -1,141 +1,430 @@
 <!DOCTYPE html>
 
 <html>
-<title>Login</title>
+<title>Block Buster Video</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
-<style>
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    flex: 1; 
-  }
-  .nav-left {
-    padding-right: 50px;
-    justify-content: flex-end;
-  }
-  .nav-right {
-    padding-left: 50px;
-    justify-content: flex-start;
-  }
-  .nav-links a {
-    text-decoration: none;
-    color: #333;
-    font-size: 35px;
-  }
-  .login-parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 30vh;
-  }
-  .login-box {
-    padding: 30px;
-    border-radius: 0px;
-    width: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFA903;
-  }
-  .nav-links a:hover {
-    background-color:#0e3fa9;
-    color: #FFA903;
-    font-size: 35px;
-  }
-  .nav-logo img {
-    width: 175px; 
-    display: block;
-  }
-  .movie-grid{
-    display: grid;
-    grid-template-columns: 250px 250px 250px 250px;
-    column-gap: 50px;
-    justify-content: center;
-    padding:50px;
-    
-  }
-  .glow-box {
-    display: grid;
-    grid-template-rows: auto;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .glow-box:hover {
-    padding-top: 10px;
-    background-color: #FFA903;
-    transform: scale(1.2);
-    box-shadow: 0 0 20px 5px rgb(255, 252, 88);
-  }
-  .about-us{
-    align-items: center;
-  }
-  footer{
-    display:grid;
-    grid-template-columns:auto auto auto;
-  }
-  div,p,button{
-      color: black;
-      font-family: Open Sans;
-      font-size: 20px;
-      text-align: center;
-  }
-</style>
+<link rel="stylesheet" href="blockbuster.css">
 
 <body style="background-color: #0e3fa9;">
-  <div style="background-color: #FFA903">
-    <nav class="navbar" style="background-color: #FFA903">
-      <!-- Left Side Links -->
-      <div class="nav-links nav-left">
-        <a href="\templateedittwo-9-20.html">Home</a>
-        <a href="#about">About</a>
-      </div>
-      <!-- Centered Logo -->
-      <a href="#" class="nav-logo">
-        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Blockbuster_logo.svg/1280px-Blockbuster_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" alt="Blockbuster Logo">
-      </a>
-      <!-- Right Side Links -->
-      <div class="nav-links nav-right">
-        <a href="#services">Genres</a>
-        <a href="#contact">A-Z</a>
-      </div>
-      <!-- Account Links -->
-      <div class="nav-links nav-right">
-        <a href="/login.html">Sign Up</a>
-        <a href="/login.html">Login</a>
-      </div>
-    </nav>
-  </div>
 
-<div class="login-parent">
-    <div class="login-box">
-        
-        <label for="first">Username:</label>
-        <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+    <div style="background-color: #FFA903">
+        <nav class="navbar">
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your Password" required>
-        <button type="submit"> Submit </button>
+            <div class="nav-center">
+
+                <div class="nav-links">
+                    <a href="home-page.html">Home</a>
+                    <a href="#about">About</a>
+                </div>
+
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Blockbuster_logo.svg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+                    alt="Blockbuster Logo">
+
+                <div class="nav-links">
+                    <a href="#GENERES">Generes</a>
+                    <a href="A-Z">A-Z</a>
+                </div>  
+
+            </div>
+
+            <div class="account-links">
+                <a href="login-page.html">Login/Sign Up</a>
+            </div>
+        </nav>
     </div>
+    
+  
+  <div id="movies" class="movie-grid">
+    
+    <div class="all-movies-heading">
+      <h1> All Movies</h1>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNDdhOGJhYzctYzYwZC00YmI2LWI0MjctYjg4ODdlMDExYjBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="The Silence of the Lambs"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Silence of the Lambs</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="The Shawshank Redemption"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Shawshank Redemption</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="The Godfather"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Godfather</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://i.ebayimg.com/images/g/8~QAAOSwyQtVoRQC/s-l1200.jpg"
+        alt="Jaws"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Jaws</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BZmIwZjA1NzUtNTA0OS00OWMyLWE5MzctM2RjOWYxZjQyZDdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="Dirty Dancing"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Dirty Dancing</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://static.wikia.nocookie.net/starwars/images/9/9d/Star_Wars_1997_re-release_poster.jpg"
+        alt="Star Wars: A New Hope"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Star Wars: A New Hope</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://www.elvisdvdcollector.com/cdn/shop/files/Schindler_sList_1024x1024.jpg?v=1725195818"
+        alt="Schindlers List"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Schindlers List</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://cdng.europosters.eu/pod_public/1300/266241.jpg"
+        alt="Forrest Gump"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Forrest Gump</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://www.originalfilmart.com/cdn/shop/products/bram_stokers_dracula_1992_teaser_original_film_art_a7ec15bd-00e5-4d1f-ad3b-c44565fbb7d8_5000x.jpg?v=1580272570"
+        alt="Dracula"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Bram Stoker's Dracula</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/S/pv-target-images/cf28bbd7fed8541b67dadc3b29b82440829e72a6c2213788d649078bfa104b4d.jpg"
+        alt="The Lord of the Rings"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Lord of the Rings: The Fellowship of the Ring.</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://cdn.posteritati.com/posters/000/000/067/528/12-angry-men-md-web.jpg"
+        alt="12 Angry Men"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>12 Angry Men</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="Pulp Fiction"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Pulp Fiction</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BMWM5ZjQxM2YtNDlmYi00ZDNhLWI4MWUtN2VkYjBlMTY1ZTkwXkEyXkFqcGc@._V1_.jpg"
+        alt="The Good, the Bad, and the Ugly"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Good, the Bad, and the Ugly</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_.jpg"
+        alt="Fight Club"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Fight Club</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLYNVT9-YDFhJlPng3TEDIb_eVmbAZ2r_ElDOk61KgA&s=10"
+        alt="The Matrix"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Matrix</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDwNZxQLeuF-BIquZgYXecfHuQ67MziiBce3zLmYyQyQ&s=10"
+        alt="GoodFellas"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>GoodFellas</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFzrs95ndnBq780F9LzAGFwRWnvBpMFxQ9BMgXweKkOzIhyBu3mJH6fc&s=10"
+        alt="One Flew Over the Cuckoo's Nest"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>One Flew Over the Cuckoo's Nest</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/I/51VQ890AJML._AC_UF894,1000_QL80_.jpg"
+        alt="Seven"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Seven</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/It%27s_a_Wonderful_Life_%281946_poster%29.jpeg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original"
+        alt="It's a Wonderful Life"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>It's a Wonderful Life</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BZGZhZGQ1ZWUtZTZjYS00MDJhLWFkYjctN2ZlYjE5NWYwZDM2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+        alt="Saving Private Ryan"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Saving Private Ryan</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://theross.org/wp-content/uploads/2026/03/WP_SevenSamurai-600x889.jpg"
+        alt="Seven Samurai"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Seven Samurai</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p24429_p_v12_bf.jpg"
+        alt="The Green Mile"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>The Green Mile</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://www.miramax.com/assets/759_LifeIsBeautiful_Catalog_Poster_v2_Approved.png"
+        alt="Life is Beautiful"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Life is Beautiful</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://resizing.flixster.com/FklqoVrTrVgdjnDiRljCJBS19sg=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2NhODE3ZDdkLTdkMWItNDgzNi05MmI4LWNjODMyOTExNTMxNC5qcGc="
+        alt="Back to the Future"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Back to the Future</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+    <div class="glow-box single-movie">
+      <div>
+        <img src="https://i0.wp.com/joshatthemovies.com/wp-content/uploads/2025/07/fireflies.jpg?fit=795%2C1000&ssl=1"
+        alt="Grave of the Fireflies"
+        style="width:230px; height:345px">
+      </div>
+      <div class="movie-details">
+        <h3>Grave of the Fireflies</h3>
+        <button>Watch Trailer</button>
+      </div>
+    </div>
+
+
+
+
+    <br><br><br>
+
+    
+
 </div>
 
 
 
+
 <hr>
-<!-- Footer -->
+
+  <div class="footer">
+    <div class="footer-header">
+      <h1 class="logo-font"> BlockBuster </h1>
+    </div>
+
+    <div class="about-us">
+      <p>
+        <strong>About Us</strong><br>
+        Blockbuster or Blockbuster Video is an American multimedia brand which was founded by David Cook in 
+        1985 as a single home video rental shop, but later became a public store chain featuring video game rentals, 
+        DVD-by-mail, streaming, video on demand, and cinema theater. The company expanded internationally throughout 
+        the 1990s. At its peak in 2004, Blockbuster employed 84,300 people worldwide and operated 9,094 stores.
+        
+      </p>
+    </div>
+
+    <div>
+      <p>
+        <strong>Follow Us</strong><br>
+        Twitter<br>
+        Facebook<br>
+        Instagram<br>
+      </p>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<hr id="about">
+
+<div class="align-items">
+  <h2><b>About Us</b></h2>
+
+  <img src="https://s3-media0.fl.yelpcdn.com/bphoto/yfm9MUYDNUHFz67PtY9T0Q/1000s.jpg"
+  alt="1936 North St, Nacogdoches, TX 75965"
+  style="display:block;margin:auto;width:100%;max-width:400px">
+
+  <p style="padding-left:100px; padding-right:100px; font-size: 25px;">
+    Lorem ipsum and mauris
+    neque quam blog. I want to share my world with you.
+    Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum,
+    porta lectus vitae, ultricies congue gravida diam non fringilla.
+  </p>
+</div>
+
+<hr>
 <footer style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px">
   <div>
     <h2>LOCATION(S)</h2>
@@ -163,13 +452,11 @@
         <span style="font-size: 30px;">New Release:</span><br>
         <span style="font-size: 25px;">Tangled</span>
       </div>
-<!-- ``` -->
 
   </div>
 
   <div class="w3-serif">
 
-<!-- ``` -->
 <h2>POPULAR TAGS</h2>
 
 <p style="font-size: 25px;">
@@ -177,12 +464,12 @@
   Kids<br>
   New<br>
 </p>
-<!-- ``` -->
 
   </div>
 
 </footer>
 
+-->
 
 </body>
 </html>
