@@ -9,6 +9,246 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     min-height:100px;
   }
+@font-face {
+    font-family: "ITC Machine Bold";
+    src: url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.eot");
+    src: url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.svg#ITC Machine Bold")format("svg");
+}
+
+
+
+/*HomePage*/
+
+  body {
+    background: 
+        radial-gradient(
+            circle, 
+            rgba(14,63,169,0.30) 20%,
+            rgba(0,0,0,0.65) 75%,
+            rgba(0,0,0,0.95) 100%
+        );
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: #ffa903;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-height:100px;
+  }
+
+  .nav-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .nav-center img {
+    width: 175px; 
+    display: block;
+  }
+
+  .account-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+  }
+
+  .nav-links a, .account-links a {
+    color: #333;
+    font-size: 40px;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover, .account-links a:hover {
+    background-color: #0e3fa9;
+    color: #ffa903;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+
+
+
+
+
+
+  .movie-grid{
+    display: grid;
+    grid-template-columns: repeat( 5, 250px);
+    column-gap: 50px;
+    justify-content: center;
+    padding: 50px;
+    row-gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  .all-movies-heading {
+    grid-column: 1 / span 5;
+    font-family: "ITC Machine Bold";
+    font-size: 50px;
+    color: #ffa903;
+  }
+
+  .single-movie {
+    display:grid;
+    grid-template-columns: auto;
+    padding-bottom: 150px;
+    padding-top: 25px;
+    
+  }
+
+  .movie-details {
+    display:none;
+  }
+
+  .glow-box {
+    transition: transform 1.3s ease, box-shadow 1.3s ease;
+  }
+
+  .glow-box:hover {
+    display: grid;
+    grid-template-rows: 345px auto auto;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 8px;
+    transition: transform 1.3s ease, box-shadow 1.3s ease;
+    background-color: #FFA903;
+    transform: scale(1.2);
+    box-shadow: 0 0 20px 5px rgb(255, 252, 88);
+  }
+
+  .glow-box:hover .movie-details {
+    display:block; 
+  }
+
+
+
+
+
+  .about-us{
+    align-items: center;
+  }
+  footer{
+    display:grid;
+    grid-template-columns:auto auto auto;
+  }
+  div,p,button{
+      color: black;
+      font-family: Open Sans;
+      font-size: 20px;
+      text-align: center;
+      
+  }
+
+
+
+
+
+  .footer {
+    display: grid;
+    grid-template-columns: auto auto 250px;
+    column-gap: 50px;
+    justify-content: center;
+    padding:25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:#FFA903
+  }
+
+
+  .about-us {
+    grid-column: 1 / span 2;
+  }
+
+  .logo-font {
+    font-family: "ITC Machine Bold";
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .loginBG{
+    background-image: 
+        radial-gradient(
+            circle, 
+            rgba(0,0,0,0.35) 20%, 
+            rgba(0,0,0,0.65) 50%,
+            rgba(0,0,0,0.95) 100%
+        ),
+        url(https://www.htmart.com/cdn/shop/products/blockbuster_charcoal_pr__80855_69ebb988-0ebc-40c2-a47d-68d8063eb9e4.jpg?v=1677448152&width=1100);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .login-parent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+  }
+
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+    margin: 200px;
+    border-radius: 10px;
+    background-color: #FFA903;
+  }
+
+  .login-box label {
+    font-size: 50px;
+  }
+
+  .login-box input {
+    font-size: 30px;
+    text-align: center;
+  }
+
+   .login-box a {
+    font-size: 25px;
+    color:#0e3fa9;
+  }
+
+  .login-box button {
+    font-size: 25px;
+  }
 
   .nav-center{
     display: flex;
