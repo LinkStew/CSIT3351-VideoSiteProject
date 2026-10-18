@@ -8,20 +8,12 @@
     url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.svg#ITC Machine Bold")format("svg");
 }
 
-
-
-/*HomePage*/
-
-  body {
-    background: 
-        radial-gradient(
-            circle, 
-            #0e3fa94d 20%,
-            rgba(0,0,0,0.65) 75%,
-            rgba(0,0,0,0.95) 100%
-        );
-  }
-
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/*Navigation Bar  ====================================================*/
 
   .navbar {
     display: flex;
@@ -73,12 +65,35 @@
     border-radius: 5px;
     padding: 5px;
   }
-  
 
 
+/* Footer ====================================================*/
 
+  footer {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  left: 0;
+  width: 100%;
+  color: #FFA903;
+  font-family: "ITC Machine Bold";
+  font-size: 25px;
+}
 
+/*Main Background  ====================================================*/
+  body {
+    background: 
+        radial-gradient(
+            circle, 
+            #0e3fa94d 20%,
+            rgba(0,0,0,0.65) 75%,
+            rgba(0,0,0,0.95) 100%
+        );
+  }
 
+/*HomePages/Generes/A-z  ====================================================*/
 
   .movie-grid {
     display: grid;
@@ -140,106 +155,7 @@
   }
 
 
-
-  .about-us{
-    align-items: center;
-  }
-
-
-
-  .footer {
-    display: grid;
-    grid-template-columns: auto auto 250px;
-    column-gap: 50px;
-    justify-content: center;
-    padding:25px;
-    margin-left: 100px;
-    margin-right: 100px;
-    background-color:#FFA903
-  }
-
-
-  .about-us {
-    grid-column: 1 / span 2;
-  }
-
-  .logo-font {
-    font-family: "ITC Machine Bold";
-  }
-
-
-
-
-
-
-/* Login Page*/
-
-  .loginBG{
-    background-image: 
-        radial-gradient(
-            circle, 
-            rgba(0,0,0,0.35) 20%, 
-            rgba(0,0,0,0.65) 50%,
-            rgba(0,0,0,0.95) 100%
-        ),
-        url(https://www.htmart.com/cdn/shop/products/blockbuster_charcoal_pr__80855_69ebb988-0ebc-40c2-a47d-68d8063eb9e4.jpg?v=1677448152&width=1100);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .login-parent {
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: auto;
-  }
-
-  .login-box {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: left;
-    justify-content: center;
-    padding: 30px;
-    margin: 200px;
-    border-radius: 10px;
-    background-color: #FFA903;
-  }
-
-  .login-box label {
-    font-size: 30px;
-    text-align: left;
-
-  }
-
-  .login-box input {
-    font-size: 30px;
-    text-align: center;
-    place-self: stretch;
-  }
-
-   .login-box a {
-    font-size: 25px;
-    color:#0e3fa9;
-  }
-
-  .login-box button {
-    font-size: 25px;
-    margin-top: 50px;
-  }
-
-
-  /*Sign-Up Page */
-
-  .SU-Heading h1 {
-    grid-column: 1 / span 3;
-    font-family: "ITC Machine Bold";
-  }
-
-
-
-
-  .page-picker {
+    .page-picker {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,8 +194,148 @@
   }
 
 
+  .genereaz-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap:15px;
+    margin-top: 20px;
+  }
 
-/* Movie Page */
+  .genereaz-nav a{
+    color:#FFA903;
+    text-decoration: none;
+    border: 3px solid #FFA903;
+    padding: 5px;
+    border-radius: 5px;;
+  }
+
+  .genereaz-nav a:hover{
+    background-color:#FFA903;
+    color: #0e3fa9;
+  }
+
+/* About Us  ====================================================*/
+
+ .aboutus {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #FFA903;
+    margin: 75px 200px;
+    text-align: center;
+    padding: 15px 75px 15px 75px;
+ }
+
+ .aboutus h1 {
+    font-family: "ITC Machine Bold";
+    font-size: 100px;
+    color: #0e3fa9;
+ }
+
+ .aboutus h3 {
+    font-family: "ITC Machine Bold";
+    font-size: 45px;
+    color: #0e3fa9;
+ }
+
+ .aboutus p {
+    font-family: "Open Sans";
+    font-size: 25px;
+ }
+
+
+
+/* Login Page  ====================================================*/
+
+  .loginBG{
+
+    background-image: 
+        radial-gradient(
+            circle, 
+            rgba(0,0,0,0.35) 20%, 
+            rgba(0,0,0,0.65) 50%,
+            rgba(0,0,0,0.95) 100%
+        ),
+        url(https://www.htmart.com/cdn/shop/products/blockbuster_charcoal_pr__80855_69ebb988-0ebc-40c2-a47d-68d8063eb9e4.jpg?v=1677448152&width=1100);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }
+
+  .login-parent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+  }
+
+  .login-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: left;
+    justify-content: center;
+    padding: 30px;
+    margin: 200px;
+    border-radius: 10px;
+    background-color: #FFA903;
+    
+  }
+
+  .login-box label {
+    font-size: 30px;
+    text-align: left;
+    text-align: center;
+  }
+
+  .login-box input {
+    font-size: 30px;
+    text-align: center;
+    place-self: stretch;
+  }
+
+   .login-box a {
+    font-size: 25px;
+    color:#0e3fa9;
+    text-align: center;
+  }
+
+  .login-box button {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+
+
+
+  /*Sign-Up Page  ==================================================== */
+
+  .SU-Heading h1 {
+    grid-column: 1 / span 3;
+    font-family: "ITC Machine Bold";
+    text-align: center;
+    font-size: 45px;;
+  }
+    .SU-Heading h3 {
+    grid-column: 1 / span 3;
+    font-family: Open Sans;
+    text-align: center;
+    font-size: 25px;
+  }
+
+
+
+
+
+
+
+/* Movie Page  ====================================================*/
 
  .trailer {
     display: grid;
@@ -328,6 +384,7 @@
 
 
 
+/* General  ====================================================*/
 
 
   video {
@@ -342,10 +399,7 @@
     padding: 7px;
   }
 
-  footer {
-    display:grid;
-    grid-template-columns:auto auto auto;
-  }
+
 
   p {
     font-family: Open Sans;
