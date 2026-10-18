@@ -16,11 +16,12 @@
     background: 
         radial-gradient(
             circle, 
-            rgba(14,63,169,0.30) 20%,
+            #0e3fa94d 20%,
             rgba(0,0,0,0.65) 75%,
             rgba(0,0,0,0.95) 100%
         );
   }
+
 
   .navbar {
     display: flex;
@@ -32,7 +33,7 @@
     min-height:100px;
   }
 
-  .nav-center{
+  .nav-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,7 +80,7 @@
 
 
 
-  .movie-grid{
+  .movie-grid {
     display: grid;
     grid-template-columns: repeat( 5, 250px);
     column-gap: 50px;
@@ -87,13 +88,19 @@
     padding: 50px;
     row-gap: 50px;
     padding-top: 100px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
   }
 
   .all-movies-heading {
     grid-column: 1 / span 5;
     font-family: "ITC Machine Bold";
     font-size: 50px;
+    color: #ffa903;
+    text-align: center;
+  }
+
+  .all-movies-heading p {
+    color: white;
     color: #ffa903;
   }
 
@@ -107,6 +114,9 @@
 
   .movie-details {
     display:none;
+    font-family: Open Sans;
+    font-size: 20px;
+    text-align: center;
   }
 
   .glow-box {
@@ -131,24 +141,9 @@
 
 
 
-
-
   .about-us{
     align-items: center;
   }
-  footer{
-    display:grid;
-    grid-template-columns:auto auto auto;
-  }
-  div,p,button{
-      color: black;
-      font-family: Open Sans;
-      font-size: 20px;
-      text-align: center;
-      
-  }
-
-
 
 
 
@@ -177,16 +172,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+/* Login Page*/
 
   .loginBG{
     background-image: 
@@ -212,9 +198,8 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: left;
     justify-content: center;
-    align-items: center;
-
     padding: 30px;
     margin: 200px;
     border-radius: 10px;
@@ -222,12 +207,15 @@
   }
 
   .login-box label {
-    font-size: 50px;
+    font-size: 30px;
+    text-align: left;
+
   }
 
   .login-box input {
     font-size: 30px;
     text-align: center;
+    place-self: stretch;
   }
 
    .login-box a {
@@ -237,4 +225,128 @@
 
   .login-box button {
     font-size: 25px;
+    margin-top: 50px;
+  }
+
+
+  /*Sign-Up Page */
+
+  .SU-Heading h1 {
+    grid-column: 1 / span 3;
+    font-family: "ITC Machine Bold";
+  }
+
+
+
+
+  .page-picker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    margin: 20px 0;
+    font-family: Arial, Open Sans;
+  }
+
+  .page-picker a {
+    color:#FFA903;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 25px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .page-picker a:hover:not(.active) {
+    background-color: #f5f5f5;
+    border-color: #cccccc;
+    color: #0070f3;
+  }
+
+  .page-picker a.active {
+    background-color: #0e3fa9;
+    border-color: #0e3fa9;
+    color: #FFA903;
+    cursor: default;
+  }
+
+  .page-btn {
+    font-weight: bold;
+    background-color: #0e3fa9;
+  }
+
+
+
+/* Movie Page */
+
+ .trailer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    margin: 20px 0;
+ }
+
+ .trailer h1 {
+    font-family: "ITC Machine Bold";
+    color: #FFA903;
+    font-size: 75px;
+    text-align: center;
+ }
+ .trailer p {
+    color: #FFA903;
+    text-align: center;
+    font-size: 25px;
+ }
+
+
+  .summary {
+    display: grid;
+    margin: 0px 275px 0px 275px;
+    background-color:#FFA903;
+    padding: 15px;
+    border-radius: 15px;
+
+ }
+
+ .summaryBody{
+  font-size: 25px;
+ }
+ .summaryHeader {
+    color: #0e3fa9;
+    font-size: 35px;
+ }
+
+ .summary hr {
+  height: 5px;
+  background-color: #0e3fa9;
+  width: 1500px;
+  margin-left: 0;
+ }
+
+
+
+
+
+  video {
+    width: 2000px;
+  }
+
+  button {
+    background-color:#0e3fa9;
+    border-color: #FFA903;
+    border-radius: 12px;
+    color:#FFA903;
+    padding: 7px;
+  }
+
+  footer {
+    display:grid;
+    grid-template-columns:auto auto auto;
+  }
+
+  p {
+    font-family: Open Sans;
   }
