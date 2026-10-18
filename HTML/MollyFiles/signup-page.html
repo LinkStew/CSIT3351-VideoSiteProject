@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html>
-<title>Login</title>
+<title>Blockbuster Sign-Up</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="blockbuster.css">
@@ -32,15 +32,15 @@
             <h1>Welcome to BlockBuster!</h1>
             <h3>Fill out the following fields to sign up and start browsing:</h3>
           </div>
-            <label for="first">Your Name:</label>
-            <input type="text" id="first" name="first" placeholder="Enter your Name" required>
-            <label for="first">Email Address:</label>
-            <input type="text" id="first" name="first" placeholder="Enter your Email" required>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your Email" required>
             <label for="password">Create a password:</label>
             <input type="password" id="password" name="password" placeholder="Create Password" required>
-            <label for="password">Confirm password:</label>
-            <input type="password" id="password" name="password" placeholder="Confirm Password" required>
-            <button type="submit"> Sign-Up! </button>
+            <label for="cpassword">Confirm password:</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required>
+            <button id="signupbutton"> Sign-Up! </button>
             <a href="login-page.html">Log In?</a>
           </div>
         </div>
@@ -48,56 +48,11 @@
     </div>
 
 
-
-<hr>
-<!-- Footer -->
-<footer style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:32px; background-color: #0E3FA9;">
-  <div>
-    <h2>LOCATION(S)</h2>
-    <p>
-      1936 North St, Nacogdoches, TX 75965
-    </p>
-  </div>
-
-  <div>
-    <h2>NEW RELEASES</h2>
-      <div>
-        <img src="https://m.media-amazon.com/images/M/MV5BMTYxNjg4MzU5OV5BMl5BanBnXkFtZTcwOTA3NTUwMw@@._V1_.jpg"
-        alt="NEW MOVIE!"
-        style="width:50px"><br>
-
-        <span style="font-size: 30px;">New Release:</span><br>
-        <span style="font-size: 25px;">Clash of the Titans</span><br>
-      </div>
-      <hr>
-      <div>
-        <img src="https://m.media-amazon.com/images/M/MV5BMTAxNDYxMjg0MjNeQTJeQWpwZ15BbWU3MDcyNTk2OTM@._V1_.jpg"
-        alt="NEW MOVIE!"
-        style="width:50px"><br>
-
-        <span style="font-size: 30px;">New Release:</span><br>
-        <span style="font-size: 25px;">Tangled</span>
-      </div>
-<!-- ``` -->
-
-  </div>
-
-  <div class="w3-serif">
-
-<!-- ``` -->
-<h2>POPULAR TAGS</h2>
-
-<p style="font-size: 25px;">
-  Horror<br>
-  Kids<br>
-  New<br>
-</p>
-<!-- ``` -->
-
-  </div>
-
+<footer>
+  <p>Copyright &copy; Blockbuster</p>
+  <a href="home-page.html">Super secret admin bypass link</a>
 </footer>
 
-
+<script src="blockbuster.js"></script>
 </body>
 </html>
