@@ -8,10 +8,20 @@
     url("https://db.onlinewebfonts.com/t/a7134cdd83876d9776f7aa08e5411e10.svg#ITC Machine Bold")format("svg");
 }
 
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 /*Navigation Bar  ====================================================*/
 
@@ -95,16 +105,13 @@ body {
 
 /*HomePages/Generes/A-z  ====================================================*/
 
-  .movie-grid {
+.movie-grid {
     display: grid;
-    grid-template-columns: repeat( 5, 250px);
-    column-gap: 50px;
+    grid-template-columns: repeat(5, 250px);
+    gap: 50px;
     justify-content: center;
-    padding: 50px;
-    row-gap: 50px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
+    padding: 50px 20px;
+}
 
   .all-movies-heading {
     grid-column: 1 / span 5;
@@ -275,18 +282,16 @@ body {
     grid-template-columns: auto;
   }
 
-  .login-box {
+.login-box {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    align-items: left;
-    justify-content: center;
     padding: 30px;
-    margin: 200px;
+    margin: 50px auto;
+    width: min(90%, 500px);
     border-radius: 10px;
     background-color: #FFA903;
-    
-  }
+}
 
   .login-box label {
     font-size: 30px;
@@ -330,11 +335,6 @@ body {
   }
 
 
-
-
-
-
-
 /* Movie Page  ====================================================*/
 
  .trailer {
@@ -358,14 +358,14 @@ body {
  }
 
 
-  .summary {
+.summary {
     display: grid;
-    margin: 0px 275px 0px 275px;
-    background-color:#FFA903;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    background-color: #FFA903;
     padding: 15px;
     border-radius: 15px;
-
- }
+}
 
  .summaryBody{
   font-size: 25px;
@@ -375,22 +375,254 @@ body {
     font-size: 35px;
  }
 
- .summary hr {
-  height: 5px;
-  background-color: #0e3fa9;
-  width: 1500px;
-  margin-left: 0;
+.summary hr {
+    height: 5px;
+    background-color: #0e3fa9;
+    width: 100%;
+    margin-left: 0;
+}
+
+ .summary button {
+    background-color:#0e3fa9;
+    border-color: #FFA903;
+    border-radius: 12px;
+    color:#FFA903;
+    padding: 7px;
+    width: 200px;
+    justify-self: center;
+    font-size: 25px;
  }
 
 
+/* Admin Home Page ====================================================*/
+
+.adminButtonsBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+    margin-top: 50px;
+    
+}
+
+.adminButtons {
+  font-size: 35px;
+}
+
+.hiddenAdminGrid {
+  display: none;
+  
+}
+
+.grid-container {
+  display: none; 
+  margin: 20px 500px 20px 500px;
+  gap: 15px;
+  background-color: #FFA903;
+}
+
+#gridA {
+  grid-template-columns: auto;
+}
+
+.grid-item-A {
+  padding: 20px;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+#gridB {
+  grid-template-columns: auto;
+}
+
+.RmMovHead {
+  font-size: large;
+  text-align: center;
+}
+
+.grid-item-B {
+  padding: 20px;
+  border-bottom: 2px solid #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+
+/* Rental Page   ====================================================*/
+
+.rentalBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #FFA903;
+    width: min(90%, 1500px);
+    margin: 50px auto 15px;
+    padding: clamp(15px, 4vw, 50px);
+    gap: 15px;
+}
+.rentalBox h2, h5{
+  font-size: 30px;
+}
+
+.rentalBoxHead {
+    font-family: "ITC Machine Bold";
+    text-align: center;
+    grid-column: 1 / span 2;
+    font-size: 25px;
+}
+
+.rentalRow {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column: 1 / span 2;
+    align-items: center;
+    font-family: Open Sans;
+}
+
+.rentalSection {
+    grid-column: 1 / span 3;
+}
+
+.rentalOptions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    font-size: 25px;
+    font-family: Open Sans;
+}
+
+.rentalOptions input[type="radio"] {
+  transform: scale(2);
+  margin-right: 10px;
+}
+
+.customerInfo {
+    display: grid;
+    grid-template-columns: 300px 2fr;
+    gap: 10px 20px;
+    grid-column: 1 / span 2;
+    font-size: 30px;
+    padding: 20px 30px;
+    align-items: center;
+    font-family: Open Sans;
+}
+
+.customerInfo label {
+    grid-column: 1;
+    font-family: Open Sans;
+
+}
+
+.customerInfo input {
+    grid-column: 2;
+    width: 75%;
+    box-sizing: border-box;
+    font-size: 15px;
+    padding: 8px;
+
+}
+.paymentInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.paymentInfo label {
+    display: flex;
+    flex-direction: column;
+    font-family: Open Sans;
+    gap: 5px;
+    font-size: 25px;
+}
+
+.paymentInfo input {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.rentalSubmit {
+    grid-column: 1 / span 2;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rentalSubmit button {
+    background-color:#0e3fa9;
+    color: #FFA903;
+    font-family: "ITC Machine Bold";
+    font-size: 30px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rentalSubmit button:hover {
+    background-color: #333;
+}
+
+/* Profile  ====================================================*/
+
+.profileGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 /span 2;;
+    background-color: #FFA903;
+    width: min(90%, 1500px);
+    margin: 50px auto 15px;
+    padding: clamp(15px, 4vw, 50px);
+    gap: 15px;
+}
+
+.profileGridHead {
+  font-family: "ITC Machine Bold";
+  font-size: 30px;
+  text-align: center;
+  grid-column: 1 / span 2;
+}
+
+.profileGridLabel {
+  font-size: 40px;
+}
+
+.profileGridInfo {
+  grid-column: 2 / span 1;
+  font-size: 40px;
+}
+
+.rentalGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column: 1 / -1;
+    gap: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.rentalGridHead {
+    font-family: "ITC Machine Bold";
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0e3fa9;
+}
+
+.rentalGridLabel {
+    font-size: 25px;
+    text-align: center;
+}
 
 /* General  ====================================================*/
 
 
-  video {
-    width: 2000px;
-  }
-
+video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
   button {
     background-color:#0e3fa9;
     border-color: #FFA903;
@@ -398,9 +630,6 @@ body {
     color:#FFA903;
     padding: 7px;
   }
-
-
-
   p {
     font-family: Open Sans;
   }
